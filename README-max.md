@@ -19,3 +19,12 @@
 * The user processes can (should? must?) be improved/upgraded, no need to stick to the existing processes.
 
 (stopped at minute 113 of the video)
+
+
+
+
+Users:
+* clients: enter tickets, pay subscriptions, feedback about service done
+* experts: are assigned to tickets, do the job, report what's done, any additional cost (if hw needs to be replaced?)
+* managers: superwise overall company performance
+* admins: backend work (create users etc)
