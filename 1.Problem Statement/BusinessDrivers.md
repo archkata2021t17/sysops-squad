@@ -2,11 +2,19 @@
 
 ## Business goal:
 
-@TODO
+Business goal:
+
+To improve the current Sysops squad by redesign or process re-engineering to make the system consistence and reliable
+
+Fix the issues with Customer Ticket fallout.
+Availability issue
+Unresponsiveness 
+Make the application consistentant and exit gracefully 
+Fix the wrong assignement of Tickets
 
 ## Business Drivers (BD)
 
-@TODO
+Loosing business, regular complaints from customers, not sustainable due to losses
 
 # Significant Architectural Requirements (SAR)
 
