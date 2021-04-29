@@ -1,11 +1,16 @@
 # Solution overview
 
 ## Principles
-
-1. @TODO
-2. @TODO  
-3. Telemetry is mandatory
-4. @TODO
+1. Adding value to the customer.
+1. Reuse before a buy or a build.
+1. UI should be browser based. Omni-channel UI, where possible.
+1. Cloud first deployment.
+1. Data Security and local laws considered.
+1. Self service / Automation where possible and 
+1. Technology Independent. Avoid a vendor lock-in.
+1. Use industry standard patterns where required. Don't reinvent the wheel.
+1. Easy to use and maintain.
+1. Requirement based change.
 
 ## Style
 
