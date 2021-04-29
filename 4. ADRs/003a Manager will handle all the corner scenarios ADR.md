@@ -1,4 +1,4 @@
-# 1a. Manager will handle all the corner scenarios
+# 3a. Manager will handle all the corner scenarios
 
 Date: 2020-04-29
 
@@ -8,7 +8,7 @@ Approved
 
 ## Context
 
-This decision is an extension of decision [001 Will Use Uber Model](./001 Will Use Uber Model ADR.md)
+This decision is an extension of decision [001 Will Use Uber Model]
 This decision talks about the Tickets which doesn't cover by any Expert (e.g. may be location is quite far away like suberbs etc.)  
 
 ## Alternatives
