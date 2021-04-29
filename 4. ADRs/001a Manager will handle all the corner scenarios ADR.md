@@ -1,4 +1,4 @@
-# 1a. Tracing and monitoring system
+# 1a. Manager will handle all the corner scenarios
 
 Date: 2020-04-29
 
@@ -8,30 +8,22 @@ Approved
 
 ## Context
 
-This decision 
+This decision is an extension of decision [001 Will Use Uber Model](./001 Will Use Uber Model ADR.md)
+This decision talks about the Tickets which doesn't cover by any Expert (e.g. may be location is quite far away like suberbs etc.)  
 
 ## Alternatives
 
-#### DataDog
+#### Auto Assign by Sysops Sqad System
 
-DataDog is a monitoring service for cloud-scale applications that allows for monitoring of servers, databases, tools, and services, through a SaaS-based platform.
-DataDog platform allows to visualize metrics data on a dashboard, and provides alerting. Solution can be integrated with Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform, Red Hat OpenShift etc… Cost of DataDog as a monitoring solution is **$15 USD per host, per month**
+If customer Ticket is not picked up by any of the Expert since the area is not covered by any expert e.g. Suberbs etc. System will wait for a configured time and then further assign it to relevant Expert.
 
-#### Graphana
+#### Manually Assign by the Manager
 
-Grafana is an open source solution for running data analytics, pulling up metrics that make sense of the massive amount of data & to monitor your apps with the help of customizable dashboards. Grafana connects with every possible database such as Graphite, Prometheus, Influx DB, ElasticSearch, MySQL, PostgreSQL etc. Solution is free of charge.
-
-#### ELK Stack
-
-"ELK" is the acronym for three open source projects: Elasticsearch, Logstash, and Kibana. Elasticsearch is a search and analytics engine. It allows us to aggregate logs, search on it and visualize it. Because it is an open source project there are no financial costs associated with buying the stack.
-
-#### Amazon CloudWatch
-
-Amazon CloudWatch is AWS alerting tool for sending notifications based on the severity levels of the inspected matrix. Approximate cost is $0.30 USD for first 10,000 metrics.
+Since this sitation is a clear corner case of loosing the ticket - this needs to be handled by Manager so that he can make sure ticket is handled properly and customer is managed properly.
 
 ## Decision
 
-Even though ELK stack or Graphana are the cheapest options for FoodFarmacy to go with, we decided to choose DataDog, because it requires minimal integration without maintenance (contrary to ELK Stack or Graphana). The convenience of an all-in-one alerting and monitoring tool for $15 USD per month is just too difficult to argue with. Finally, choosing an open-source solution we would have to appoint 0.2-0.5 time of a developer / administrator to take care of the monitoring.
+Clearly, this is solving the current problem where tickets are getting lost - we decided that Manager will took additional responsibility to manage these corner cases (left after implementation of Uber self assignment model).
 
 ## Consequences
-We will have to spend $15 USD and the price might increase in the future. We think it unlikely it will be a significant increase. Reduced burden on maintenance due to DataDog being a managed service.
+Manager may need to set a side a time to handle these activities along with current activities assigned to him.
