@@ -34,7 +34,9 @@ The firm is not focusing on best mobile experience for Experts, so it's OK to gi
 
 ## Decision
 
-
+We agreed to go ahead with Use of the current Mobile App for the Expert with reasonalble modifications.
 
 ## Consequences
+
+Already discribed above as positives/negative points.
 
