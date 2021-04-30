@@ -6,4 +6,4 @@
 - [Tradeoffs](Tradeoffs.md)
 - [Risks and Sensitive points](RisksAndSensitivePoints.md)
 - [ADRs](../4.ADRs/)}
-- [Migration approach](Migration.md)
+- [Migration approach](MigrationApproach.md)

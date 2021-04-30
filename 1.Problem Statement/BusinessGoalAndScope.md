@@ -61,17 +61,17 @@ No. of uses - 1000s
 
 ### Users
 
-##Customers
+#### Customers
 The customer registers for the Sysops Squad service, maintains their customer profile, support contracts, and billing information. Customers
 enter problem tickets into the system, and also fill out surveys after the work has been completed.
 
-##Administrators
+#### Administrators
 The administrator user maintains the internal users of the system, including the list of experts and their corresponding skillset, location, and availability. The administrator also manages all of the billing processing for customers using the system, and maintains static reference data (such as supported products, name-value pairs in the system, and so on).
 
-##Technician
+#### Technician
 Experts are assigned problem tickets and fix problems based on the ticket. They also interact with the knowledge base to search for solutions to customer problems and also enter notes about repairs.
 
-##Managers
+#### Managers
 The manager keeps track of problem ticket operations and receives operational and analytical reports about the overall Sysops Squad problem ticket system.
 
 
