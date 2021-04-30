@@ -4,17 +4,21 @@
 
 Business goal:
 
-To improve the current Sysops squad by redesign or process re-engineering to make the system consistence and reliable
-
-Fix the issues with Customer Ticket fallout.
-Availability issue
-Unresponsiveness 
-Make the application consistentant and exit gracefully 
-Fix the wrong assignement of Tickets
+To improve the current Sysops squad by process re-engineering or redesign to make the system consistence, reliable and customer centric
 
 ## Business Drivers (BD)
 
 Loosing business, regular complaints from customers, not sustainable due to losses
+
+| # | Business Driver |
+|----|----|
+| BD.001 | Changes to the system must be quick, easy and non distruptive 
+| BD.002 | Zero Customer's Ticket loss
+| BD.003 | 100% correct assignment of tickets to relevant Experts
+| BD.004 | The system must be highly available to Customers (internal/external)
+| BD.005 | Resolve the frequent system crash 
+| BD.006 | The system must be responsive during the peak business hours
+
 
 # Significant Architectural Requirements (SAR)
 
@@ -22,34 +26,8 @@ List of architecture driving requirements (primary functional, quality attribute
 
 | # | Significant Architectural Requirements | From BD |
 |----|----|----|
-| 1 | @TODO | 1 |
-| 2 | @TODO | 1, 2 |
-| 3 | @TODO | 3 |
-| 4 | @TODO | 1, 3, 4, 5 |
-| 5 | @TODO | 1, 4, 5 |
-| 6 | @TODO | 1, 4, 5 |
-
-# Details of SARs
-
-## 1. @TODO.
-
-@TODO
-
-## 2. @TODO
-@TODO
-
-## 3. @TODO
-
-@TODO
-
-## 4. @TODO.
-
-@TODO
-
-## 5. @TODO
-
-@TODO
-
-## 6. @TODO
-
-@TODO
+| SAR.001 | Migrate Monolith application to microservice architecture  | BD.001 |
+| SAR.002 | Create a CI/CD pipeline for automatic build, test, deploy in all environments  | BD.001 |
+| SAR.003 | Add Automated Regression Test Suite as part of CI/CD | BD.001 |
+| SAR.004 | Re-design the Ticket assignment module  | BD.002, BD.003 |
+| SAR.005 | Deploy the system in Highly available and Elasticity mode | BD.004, BD.005, BD.006 |
