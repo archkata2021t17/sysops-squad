@@ -26,8 +26,8 @@ List of architecture driving requirements (primary functional, quality attribute
 
 | # | Significant Architectural Requirements | From BD |
 |----|----|----|
-| SAR.001 | Migrate Monolith application to microservice architecture  | BD.001 |
-| SAR.002 | Create a CI/CD pipeline for automatic build, test, deploy in all environments  | BD.001 |
-| SAR.003 | Add Automated Regression Test Suite as part of CI/CD | BD.001 |
-| SAR.004 | Re-design the Ticket assignment module  | BD.002, BD.003 |
-| SAR.005 | Deploy the system in Highly available and Elasticity mode | BD.004, BD.005, BD.006 |
+| SAR.001 | Migrate Monolith application to microservice architecture                       | BD.001                 |
+| SAR.002 | Create a CI/CD pipeline for automatic build, test, deploy in all environments   | BD.001                 |
+| SAR.003 | Add Automated Regression Test Suite as part of CI/CD                            | BD.001                 |
+| SAR.004 | Re-design the Ticketing system module                                           | BD.002, BD.003         |
+| SAR.005 | Deploy the system in Highly available mode                                      | BD.004, BD.005, BD.006 |
