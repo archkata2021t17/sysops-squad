@@ -25,14 +25,27 @@
 * For a ticket, there are available Experts but their available timeslots don't match any of Customer's timeslots
   * Option 1: the ticket will stay in a pending state, use the pending ticket process
   * Option 2: Let Customer know about available Experts' slots, maybe the Customer will adjust his slots to be serviced earlier/faster
-* 
+* The Expert is on his way to serve the Customer and there is an accident (car broken) that makes it impossible for the Expert to come in time or to come at all
+  * Option 1: notify the Admin/Manager to quickly find another Expert
+  * Option 2: have an automated way (in the Expert UI) for the affected Expert to ask other Experts to substitute for him (if no Experts reply, back to Option 1)
+  * Option 3: 
+* The Expert comes but the Customer is not at home and can't be contacted
+  * Option 1: wait for the whole agreed timeslot
+  * Option 2: wait for configured time (e.g. 15 min) then be available for another task, ticket flagged
+* The Expert comes but finds the model different from what's in the ticket
+* The Expert comes but finds the he needs to purchase spare parts
+* The Expert comes but can't finish the job in time
+  * Option 1: schedule another visit
+  * Option 2 (if later tickets are not affected): let him continue
+  * Option 3 (if later tickets are affected): find substitution for a later ticket (unlcear what's with the expert fee for the lost later ticket - probably depends on the reason)
+* The Expert comes but finds the appliance irrepairable
 
 ## Technical Risks
 
 * With microservice architecture, any of the services can go down - it shouldn't bring the whole system down. Additional means like caching can be used to reduce mutual availability requirements.
 * When the system is distributed, the transactions become distributed as well. Integrity can be difficult to ensure.
 * Third-party services (messaging, maps) can go down - need to think of alternatives. If we don't have contracts with those services for the company consumption, and rely on users to use the services themselves (e.g. their own Google Maps on their devices), then we need to think of backup systems (e.g. Yahoo Maps). Also, some services might classify the usage as corporate and switch off or pin down.
-* Migration can fail - should be ready to switch back to the existing system.
+* Migration fails - should be ready to switch back to the existing system.
 
 # Sensitive points
 
