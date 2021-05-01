@@ -19,15 +19,15 @@ Existing to new Components Mapping
 |7.  | Customer Profile      | Customer Service      | Merged into new service                       |
 |8.  | Support Contract      | Customer Service      | Merged into new service                       | 
 |9.  | Expert Profile        | Expert Service        | Rename of the service                         | 
-|10. | KB Maintenance       | KB Service            | Merged into new service                       | 
-|11. | KB Search            | KB Service            | Merged into new service                       | 
-|12. | Reporting            | Reporting Service     | Rename of the service                         | 
-|13. | Ticket Shared        | Ticket Service        | Merged into new service                       | 
-|14. | Ticket Assign        | Ticket Service        | Changed ticketing business process -> ADR.003 | 
-|15. | Ticket Route         | Filter Service        | Redesign functionality                        | 
-|16. | Survey               | Survey Service        | Merged into new service                       | 
-|17. | Survey Template      | Survey Service        | Merged into new service                       |
-|18. | User Maintenance     | User Service          | Rename of the service                         |
+|10. | KB Maintenance        | KB Service            | Merged into new service                       | 
+|11. | KB Search             | KB Service            | Merged into new service                       | 
+|12. | Reporting             | Reporting Service     | Rename of the service                         | 
+|13. | Ticket Shared         | Ticket Service        | Merged into new service                       | 
+|14. | Ticket Assign         | Ticket Service        | Changed ticketing business process -> ADR.003 | 
+|15. | Ticket Route          | Filter Service        | Redesign functionality                        | 
+|16. | Survey                | Survey Service        | Merged into new service                       | 
+|17. | Survey Template       | Survey Service        | Merged into new service                       |
+|18. | User Maintenance      | User Service          | Rename of the service                         |
   
 ![Mapping of components](./img/ComponentMapping.jpg)
 
