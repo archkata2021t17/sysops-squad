@@ -1,10 +1,5 @@
-### Others
-ADRs - Big bang vs Strangler migration
-- Strangler 
-
 ### Pre-requisites
 1. Automated regression test suite.
-1. 
 
 ### Migration Approach
 1. The first service to be migrated is the "Ticket Service". Followed by one micro-service at a time. 
