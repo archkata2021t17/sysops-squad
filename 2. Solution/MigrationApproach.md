@@ -13,7 +13,7 @@ deployments will be done during non/low business hours.
    1. Any running microservice will be stopped.
    1. Database of the new deploying microservice will be migrated from old to new DB.
    1. Microservice will be started followed by the monolith application.
-   1. Post deployment smoke test.
+   1. Post deployment smoke test. 
 
   
 <s>* Downtime is OK, so we can:
