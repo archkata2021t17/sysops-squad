@@ -10,15 +10,15 @@ Existing to new Components Mapping
 
 | # | Existing Systems's Component | New System's Component | Action |
 |----|----|----|----|
-|1. | Login                 | Login Service         | Rename of the service                         | 
-|2. | Billing Payment       | Billing Service       | Merged into new service                       | 
-|3. | Billing History       | Billing Service       | Merged into new service                       | 
-|4. | Customer Notification | Notification Service  | New Service for all notifications             | 
-|5. | Ticket Notify         | Notification Service  | New Service for all notifications             |
-|6. | Survey Notify         | Notification Service  | New Service for all notifications             |
-|7. | Customer Profile      | Customer Service      | Merged into new service                       |
-|8. | Support Contract      | Customer Service      | Merged into new service                       | 
-|9. | Expert Profile        | Expert Service        | Rename of the service                         | 
+|1.  | Login                 | Login Service         | Rename of the service                         | 
+|2.  | Billing Payment       | Billing Service       | Merged into new service                       | 
+|3.  | Billing History       | Billing Service       | Merged into new service                       | 
+|4.  | Customer Notification | Notification Service  | New Service for all notifications             | 
+|5.  | Ticket Notify         | Notification Service  | New Service for all notifications             |
+|6.  | Survey Notify         | Notification Service  | New Service for all notifications             |
+|7.  | Customer Profile      | Customer Service      | Merged into new service                       |
+|8.  | Support Contract      | Customer Service      | Merged into new service                       | 
+|9.  | Expert Profile        | Expert Service        | Rename of the service                         | 
 |10. | KB Maintenance       | KB Service            | Merged into new service                       | 
 |11. | KB Search            | KB Service            | Merged into new service                       | 
 |12. | Reporting            | Reporting Service     | Rename of the service                         | 
@@ -30,3 +30,31 @@ Existing to new Components Mapping
 |18. | User Maintenance     | User Service          | Rename of the service                         |
   
 ![Mapping of components](./img/ComponentMapping.jpg)
+
+## Database mapping
+| # | Existing DB Table | New DB | Action |
+|----|----|----|----|
+|1.  | ss.Customer                   | ?????????  | ???????? | 
+|2.  | ss.Customer_Notification      | ?????????  | ???????? | 
+|3.  | ss.Survey                     | ?????????  | ???????? | 
+|4.  | ss.Survey_Question            | ?????????  | ???????? | 
+|5.  | ss.Customer_Survey            | ?????????  | ???????? |
+|6.  | ss.Customer_Survey_Question   | ?????????  | ???????? |
+|7.  | ss.Customer_Survey_Response   | ?????????  | ???????? |
+|8.  | ss.Billing                    | ?????????  | ???????? | 
+|9.  | ss.Contract                   | ?????????  | ???????? | 
+|10. | ss.Payment_Method             | ?????????  | ???????? | 
+|11. | ss.Payment                    | ?????????  | ???????? | 
+|12. | ss.SysOps_User                | ?????????  | ???????? | 
+|13. | ss.Profile                    | ?????????  | ???????? | 
+|14. | ss.Expert_Profile             | ?????????  | ???????? | 
+|15. | ss.Expertise                  | ?????????  | ???????? | 
+|16. | ss.Location                   | ?????????  | ???????? | 
+|17. | ss.Article                    | ?????????  | ???????? |
+|18. | ss.Tag                        | ?????????  | ???????? |
+|19. | ss.Keyword                    | ?????????  | ???????? |
+|20. | ss.Article_Tag                | ?????????  | ???????? |
+|21. | ss.Article_Keyword            | ?????????  | ???????? |
+|22. | ss.Ticket                     | ?????????  | ???????? |
+|23. | ss.Ticket_Type                | ?????????  | ???????? |
+|24. | ss.Ticket_History             | ?????????  | ???????? |
