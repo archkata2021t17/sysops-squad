@@ -1,10 +1,32 @@
-* Downtime is OK, so we can:
+### Others
+ADRs - Big bang vs Strangler migration
+- Strangler 
+
+### Pre-requisites
+1. Automated regression test suite.
+1. 
+
+### Migration Approach
+1. The first service to be migrated is the "Ticket Service". Followed by one micro-service at a time. 
+This is only service, which has functional changes as per solution design. 
+1. The migration will be based on 'phased delivery' for each micro-service.
+1. The Strangler Pattern will be used. The monolith will be decommissioned after six months of successful run of the last micro-services. 
+1. Another benefit of Strangler Pattern is that the expected downtime is minimal, still the initial few
+deployments will be done during non/low business hours.
+1. Below steps will be followed for each microservice deployment in production environment.   
+   1. The monolith application will be stopped
+   1. Any running microservice will be stopped.
+   1. Database of the new deploying microservice will be migrated from old to new DB.
+   1. Microservice will be started followed by the monolith application.
+   1. Post deployment smoke test.
+
+  
+<s>* Downtime is OK, so we can:
   * take the current system down,
   * do the data migration (shouldn't be big -- clarify??? how many tickets there already?)
   * Run QA UI to ensure the new system works (need all the key test cases ready)
   * Bring the new system live
-  
-  
+</s>
 ----
 Existing to new Components Mapping
 

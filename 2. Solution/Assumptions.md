@@ -7,4 +7,7 @@
 
 ** We are assuming that the current system is low volume system which do not require Elasticity to be implemented
 
-** 
+** The original development team will work on decomposing the monolith.
+
+** The complexity of the system is low-medium.
+ 
