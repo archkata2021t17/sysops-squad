@@ -32,7 +32,7 @@ In this architectural kata, the teams have been given a project to migrate an ex
      - [Solution Overview](2.%20Solution/SolutionOverview.md)
      - [Migration Approach](2.%20Solution/MigrationApproach.md)
      - [CI/CD](2.%20Solution/CICDRouteToLive.md)
-     - [Deployment](2.%20Solution/Deployment.md)
+     - [Deployment](2. Solution/DisasterRecovery.md)
      - [Risks](2.%20Solution/RisksAndSensitivePoints.md)
      - [Assumptions](2.%20Solution/Assumptions.md)
 - [Perspectives](3.%20Perspectives)

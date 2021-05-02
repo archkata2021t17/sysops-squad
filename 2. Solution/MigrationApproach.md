@@ -46,7 +46,7 @@ Existing to new Components Mapping
 |17. | Survey Template       | Survey Service        | Merged into new service                       |
 |18. | User Maintenance      | User Service          | Rename of the service                         |
   
-![Mapping of components](./img/ComponentMapping.jpg)
+![Mapping of components](./img/ServiceMapping.png)
 
 ## Database mapping
 | # | Existing DB Table | New DB |

@@ -1,4 +1,4 @@
-# Solution overview
+# Solution Overview
 
 ## Principles
 1. Adding value to the customer.
@@ -7,75 +7,29 @@
 1. Technology Independent. Avoid a vendor lock-in.
 1. Easy to use and maintain.
 
-## Style
+## Summary
+After analysing the problem statement and current application architecture of Penultimate Electronics, its identified that
+the current system is a monolith, and some key functionalities doesn't work reliably.     
 
-Based on provided principles, the system should be n-tier with a layered approach within modules that secure functionality's extensibility. Based on current [business goals](../1.ProblemBackground/BusinessGoalAndScope.md) (number of users, functionality current and desired) and [constraints](../1.ProblemBackground/Constraints.md) the primary implementation style of architecture is **modularized monolith**, with an accent to high modularity to lower cost of further extractions to independent services.
+##### As-Is Architecture
+![AsIsAppArchitecture](./img/AsIsSysOpSquadAppArch.png)
 
-According to declared principles, we propose building systems based on event sourcing and domain-driven design for core components.
+##### To-Be Architecture
+The Purposed Architecture is to break the current monolith into microservices architecture.  
 
-@TODO
+**Key Architectural Points**
+1. Current application will be divided into multiple [microservices](./MicroServices.md).
+1. Reuse the services where possible. The existing component to microservice mapping can be found [here](img/ServiceMapping.png)
+1. Ticket assignment service is re-designed as Expert Selection microservice based on UBER model, details can be found [here](img/@Todo perspective)
+1. Message Broker queues and guaranteed delivery will be used for inter-service communication.
+1. Big Bang migration approach.
+1. Create robust regression test suite to have confidence in moved, changed and newly created services. 
+1. On demand scaling of microservices to achieve high availability. 
+1. Disaster recovery of the system will be handled by Active-Passive deployment. Details are [here](DisasterRecovery.md).
+1. Purposed business process changes 
+    1. Purposed responsibilities addition to the manager role for some corner case scenario's
+    1. Expert will commit to the customer visit himself, rather than assigned.   
 
-## Strategic domain design
+![ToBeArchitecture](./img/ToBeSysOpSquadAppArch.png)
 
-![Strategic Domain Design](./img/FF_StrategicDomainDesign.jpg)
 
-In the image above, we present our vision of responsibilities for primary system contexts.
-
-**Core**
-
-The main differentiator of the business, unique modules that support business processes. In our case, there are:
-
-@TODO
-
-**Supportive**
-
-pardpardeftab720partightenfactor0
-cf0 @TODO
-pardpardeftab720partightenfactor0
-cf0
-**Generic**
-
-pardpardeftab720partightenfactor0
-cf0 @TODO
-pardpardeftab720partightenfactor0
-cf0
-## Conceptual Model
-
-@TODO
-
-pardpardeftab720partightenfactor0
-cf0 @TODO - Meta Model diagram and it'92s Link
-
-_Knowledge level_ describes rules how actors/entities interact with each other
-
-_Operational level_ describe main actors/entities involved in main scenarios
-
-Metamodel covers all existing business scenarios and should be capable of absorbing future ones. Even more, metamodel should encourage us to think about new scenarios that open in a metamodel.  
-
-Referring to the diagram:
-
-@TODO
-
-## Component composition and communication
-
-@TODO - System Approach diagram and it'92s Link
-
-*Gravity centers highlighted*
-
-**Aim for Simplicity**
-
-We'd like to provide initial simplicity for the overall system but that do not close the window for further extraction of services and independent development and deployment.
-
-Grouping functional areas to benefit from the ease of development and deployment.
-
-**Aim for Modifiability**
-
-The second important part is to provide points of extensions and ease of modifiability for the proposed solution. It means subparts can be extracted and extended without massive refactoring.
-
-### Composition
-
-@TODO
-
-### Communication and security
-
-@TODO
