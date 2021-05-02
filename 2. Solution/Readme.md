@@ -1,9 +1,9 @@
 # Solution Background
 
 - [Solution Overview](SolutionOverview.md)
-- [Assumptions](Assumptions.md)
-- [System approach](SystemAppoach.md)
+- [Deployment](Deployment.md)
+- [Migration approach](MigrationApproach.md)
+- [ADRs](../4.ADRs/)
 - [Tradeoffs](Tradeoffs.md)
 - [Risks and Sensitive points](RisksAndSensitivePoints.md)
-- [ADRs](../4.ADRs/)}
-- [Migration approach](MigrationApproach.md)
+- [Assumptions](Assumptions.md)
