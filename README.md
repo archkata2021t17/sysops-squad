@@ -17,4 +17,5 @@ In this architectural kata, the teams have been given a project to migrate an ex
 - [Miro](https://miro.com/app/board/) for diagrams
 
 ### Solution Structure
+#### Table of contents
 @TODO fill the structure.
