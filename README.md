@@ -1,13 +1,13 @@
 # Architectural Katas April - May 2021 - Team Arch Mahal (Team 17)
 
 ## About the team
-We, the Arch Mahal team are a group of people, with a varied architectural experience, across a wide variety of domains - finance, high performance trading systems, telecom and IT infrastructure. Though we have registered as Team 17, we prefer the name Arch Mahal because of two reasons: 
+We, the Arch Mahal team are a group of people, with a varied architectural experience, across a wide variety of domains - finance, high performance trading systems, telecom and IT infrastructure. Though we have registered as Team 17, we prefer the name Arch Mahal because of two reasons:
 1. It represents the initials of the team members.
 2. The word "Mahal" means palace in many Indian languages, and palaces are associated with great architectures.
 
 Since the team members are spread across the time zones - Singapore, India and UK, coordination was always going to be a challenge, but it seems to have worked out since all the team members are passionate about this project and software architecture in general.
 
-## Architectural Katas April - May 2021 
+## Architectural Katas April - May 2021
 
 ### Problem Definition
 In this architectural kata, the teams have been given a project to migrate an existing trouble ticketing application - SysOps Squad to a new architecture. The existing application has several issues with regards to core functionality and availability. This application is a large monolith, where any changes / fixes take too long and usually give rise to new issues.
@@ -18,4 +18,17 @@ In this architectural kata, the teams have been given a project to migrate an ex
 
 ### Solution Structure
 #### Table of contents
-@TODO fill the structure.
+- [Problem Statement](1.%20Problem%20Statement/Readme.md)
+     - [System Overview](1.%20Problem%20Statement/BusinessGoalAndScope.md)
+     - [Business Drivers](1.%20Problem%20Statement/BusinessDrivers.md)
+     - [Functional Requirements](1.%20Problem%20Statement/FunctionalRequirements.md)
+     - [Non Functional Requirements]((1.%20Problem%20Statement/Non-Functional.md)
+     - [Stakeholders](1.%20Problem%20Statement/Stakeholders.md)
+     - [Constraints](1.%20Problem%20Statement/Constraints.md)
+- [Solution Overview](2.%20Solution/Readme.md)
+     - [Solution Overview](2.%20Solution/SolutionOverview.md)
+     - [Migration Approach](2.%20Solution/MigrationApproach.md)
+     - [Deployment](2.%20Solution/Deployment.md)
+     - [Risks](2.%20Solution/RisksAndSensitivePoints.md)
+     - [Assumptions](2.%20Solution/Assumptions.md)
+     - [ADRs](4.%20ADRs/Readme.md)
