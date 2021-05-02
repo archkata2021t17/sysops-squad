@@ -1,6 +1,6 @@
 # 4. Multiple UI Interface for each Sysops User Role
 
-Date: 2020-04-29
+Date: 2021-04-29
 
 ## Status
 
@@ -24,7 +24,7 @@ Decision about the User/Customer UI design. There are 4 different Actors who wor
 #### Single User/Customer UI segregated by Role
 
 This is more favorable since this model allows reuse of components and easy to maintanance; however may not be good from security point of view (people trying to access the system beyond their Role).
-Also, when development team needs to update the UI then it needed to regress other's as well. 
+Also, when development team needs to update the UI then it needed to regress other's as well.
 
 #### Individual UIs for each
 
@@ -32,7 +32,7 @@ This solution was becoming more complex therefore hard to maintain; however this
 
 ## Decision
 
-We will go for Individual UIs for each Sysops User Role with common library being implemented so that common features like Authentication and Authorisation can be mangaged at single place. 
+We will go for Individual UIs for each Sysops User Role with common library being implemented so that common features like Authentication and Authorisation can be mangaged at single place.
 
 ## Consequences
 
