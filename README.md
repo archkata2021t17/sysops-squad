@@ -22,7 +22,7 @@ In this architectural kata, the teams have been given a project to migrate an ex
 ### Solution Structure
 #### Table of contents
 - [Problem Statement](1.%20Problem%20Statement/Readme.md)
-     - [System Overview](1.%20Problem%20Statement/BusinessGoalAndScope.md)
+     - [Business Goals and Context](1.%20Problem%20Statement/BusinessGoalAndScope.md)
      - [Business Drivers](1.%20Problem%20Statement/BusinessDrivers.md)
      - [Functional Requirements](1.%20Problem%20Statement/FunctionalRequirements.md)
      - [Non Functional Requirements](1.%20Problem%20Statement/Non-Functional.md)
@@ -30,9 +30,10 @@ In this architectural kata, the teams have been given a project to migrate an ex
      - [Constraints](1.%20Problem%20Statement/Constraints.md)
 - [Solution Overview](2.%20Solution/Readme.md)
      - [Solution Overview](2.%20Solution/SolutionOverview.md)
+     - [Microservices](2.%20Solution/MicroServices.md)
      - [Migration Approach](2.%20Solution/MigrationApproach.md)
      - [CI/CD](2.%20Solution/CICDRouteToLive.md)
-     - [Deployment](2. Solution/DisasterRecovery.md)
+     - [DR Deployment](2.%20Solution/DisasterRecovery.md)
      - [Risks](2.%20Solution/RisksAndSensitivePoints.md)
      - [Assumptions](2.%20Solution/Assumptions.md)
 - [Perspectives](3.%20Perspectives)
