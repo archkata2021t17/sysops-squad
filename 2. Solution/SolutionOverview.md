@@ -2,15 +2,10 @@
 
 ## Principles
 1. Adding value to the customer.
-1. Reuse before a buy or a build.
-1. UI should be browser based. Omni-channel UI, where possible.
-1. Cloud first deployment.
-1. Data Security and local laws considered.
-1. Self service / Automation where possible and 
+1. Self service / Automation where possible.
+1. Use Open source component, reuse before a buy or a build. 
 1. Technology Independent. Avoid a vendor lock-in.
-1. Use industry standard patterns where required. Don't reinvent the wheel.
 1. Easy to use and maintain.
-1. Requirement based change.
 
 ## Style
 
@@ -22,7 +17,7 @@ According to declared principles, we propose building systems based on event sou
 
 ## Strategic domain design
 
-![Strategic Domain Design](../img/FF_StrategicDomainDesign.jpg)
+![Strategic Domain Design](./img/FF_StrategicDomainDesign.jpg)
 
 In the image above, we present our vision of responsibilities for primary system contexts.
 
