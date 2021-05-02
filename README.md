@@ -22,7 +22,7 @@ In this architectural kata, the teams have been given a project to migrate an ex
      - [System Overview](1.%20Problem%20Statement/BusinessGoalAndScope.md)
      - [Business Drivers](1.%20Problem%20Statement/BusinessDrivers.md)
      - [Functional Requirements](1.%20Problem%20Statement/FunctionalRequirements.md)
-     - [Non Functional Requirements]((1.%20Problem%20Statement/Non-Functional.md)
+     - [Non Functional Requirements](1.%20Problem%20Statement/Non-Functional.md)
      - [Stakeholders](1.%20Problem%20Statement/Stakeholders.md)
      - [Constraints](1.%20Problem%20Statement/Constraints.md)
 - [Solution Overview](2.%20Solution/Readme.md)
