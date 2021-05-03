@@ -1,8 +1,12 @@
 ## Microservices Details:
 
 The monolith will be divided into several microservices, their details and interaction is given below. 
+
+The microserivce will be interacting on the PUSH Model except the "Reporting Service" which is designed on PULL model.
+
 ![ServiceInteration](./img/ServiceInteractions.png)
 
+NOTE: This interaction is based on limited knowledge and understand of the current problem there may be more iteration needed for finalise the interactions.
 
 ### High level responsibility of each microservice 
 
