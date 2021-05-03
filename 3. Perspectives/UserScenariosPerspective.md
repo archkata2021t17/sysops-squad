@@ -21,5 +21,30 @@
   * Wait the match to happen within pre-configured time. If it takes too long, then
   * Helpdesk/Admin/Manager takes care of the communication with the available Experts to get the ticket assigned.
 
+
+
+
+
+
 ## Ticket-to-expert matching
+
+### Stakeholders
+* Customer - Interested in having the ticket assigned to experts and executed in a timely fashion
+* Expert - Interested in receiving available tickets to execute and be paid for those
+* Helpdesk/Admin - Interested in most automation and error-proof process
+
+### Risks
+
+* A ticket may require multiple visits, or a joint visit my multiple experts, or visits happening one right after another (e.g. plumber and electrician). Solution:
+  * We introduce a new entity - Visit. A ticket has 1..N visits. Each visit can have multiple experts (which can be converted to multiple tickets in the backend), and there can be time dependency between them.
+* There can be specific patterns that are hard to match in one try. Solution:
+  * Each Expert who would like to do a visit proposes himself to all the times that would work for him. There can be several Experts attaching themselves to a visit.
+  * When a group of dependent visits is full, the Experts attachment is finalized based on 1) the earlist visit for a Customer; 2) time priority for Experts. At this time, a notification is sent both to the Customer and to the finalized Experts who will go to execute the visit.
+* There are available Experts but their time slots don't match the Customer's. Solution:
+  * When visits are not matched for some time, Helpdesk contacts the Customer and explains the situation and proposes available timeslots of Experts. If the Customer agrees to the time change, the visit is updated and Experts for a visit are finalized.
+    * This can be automated later.
+
+
+
+
 ## Ticket execution (visits)
