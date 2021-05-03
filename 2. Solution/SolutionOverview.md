@@ -20,7 +20,7 @@ The Purposed Architecture is to break the current monolith into microservices ar
 **Key Architectural Points**
 1. Current application will be divided into multiple [microservices](./MicroServices.md).
 1. Reuse the services where possible. The existing component to microservice mapping can be found [here](img/ServiceMapping.png)
-1. Ticket assignment service is re-designed as Expert Selection microservice based on UBER model, details can be found [here](3.%20Perspectives)
+1. Ticket assignment service is re-designed as Expert Selection microservice based on UBER model, details can be found [here](../3.%20Perspectives)
 1. Message Broker queues and guaranteed delivery will be used for inter-service communication.
 1. Big Bang migration approach.
 1. Create robust regression test suite to have confidence in moved, changed and newly created services. 
