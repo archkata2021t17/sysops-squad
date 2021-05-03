@@ -48,3 +48,17 @@
 
 
 ## Ticket execution (visits)
+
+### Stakeholders
+* Customer - Interested in ticket executed in a timely fashion
+* Expert - Interested in executing a ticket without problems
+* Helpdesk/Admin - Interested in most automation and error-proof process
+
+### Risks
+* Expert can't arrive to the Customer's place due to an accident. Solution:
+  * If time permits and Expert is replaceable (i.e. any Expert of the desired skillset can come), Helpdesk finds and sends a replacement, otherwise notifies the Customer and reschedules the visit.
+* Expert arrived but can't enter (nobody's home). Solution:
+  * Helpdesk contacts the Customer and resolves the situation (possibly rescheduling the visit)
+* Expert can't finish job in time. Solutions:
+  * If more time needed and time permits (i.e. no later visits for other Customers affected), Expert stays longer and completes the visit.
+  * If there is no time, or it's impossible to finish because the needed spare parts need to be bought, Customer schedules a new visit, possibly with a help of Helpdesk.
