@@ -51,13 +51,3 @@ Possible, but Out Of Scope
 * Third-party services (messaging, maps) can go down - need to think of alternatives. If we don't have contracts with those services for the company consumption, and rely on users to use the services themselves (e.g. their own Google Maps on their devices), then we need to think of backup systems (e.g. Yahoo Maps). Also, some services might classify the usage as corporate and switch off or pin down.
 * Migration fails - should be ready to switch back to the existing system.
 * (Handled by Message Broker) Messages in queues lost because queues are down together with the messages - queued msgs should be stored in at least 2 places (maybe primary and backup)
-
-# Sensitive points
-
-## Business related
-
-@TODO
-
-## Technical
-
-@TODO
