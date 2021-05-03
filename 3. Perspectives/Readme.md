@@ -1,5 +1,5 @@
 # Important scenarios
-## [Ticket creation] (TicketCreation.png)
+## Ticket creation
 
 ### Stakeholders
 * Customer - Interested in entering a ticket the fastest and easiest way, get it assigned to experts, and executed in a timely fashion
@@ -21,12 +21,10 @@
   * Wait the match to happen within pre-configured time. If it takes too long, then
   * Helpdesk/Admin/Manager takes care of the communication with the available Experts to get the ticket assigned.
 
+![Ticket creation](TicketCreation.png)
 
 
-
-
-
-## [Ticket-to-expert matching](TicketToExpertMatching.png)
+## Ticket-to-expert matching
 
 ### Stakeholders
 * Customer - Interested in having the ticket assigned to experts and executed in a timely fashion
@@ -44,10 +42,10 @@
   * When visits are not matched for some time, Helpdesk contacts the Customer and explains the situation and proposes available timeslots of Experts. If the Customer agrees to the time change, the visit is updated and Experts for a visit are finalized.
     * This can be automated later.
 
+![Ticket-to-expert matching](TicketToExpertMatching.png)
 
 
-
-## [Ticket execution (visits)](TicketExecution.png)
+## Ticket execution (visits)
 
 ### Stakeholders
 * Customer - Interested in ticket executed in a timely fashion
@@ -62,3 +60,5 @@
 * Expert can't finish job in time. Solutions:
   * If more time needed and time permits (i.e. no later visits for other Customers affected), Expert stays longer and completes the visit.
   * If there is no time, or it's impossible to finish because the needed spare parts need to be bought, Customer schedules a new visit, possibly with a help of Helpdesk.
+
+![Ticket execution (visits)](TicketExecution.png)
