@@ -1,5 +1,5 @@
 # Important scenarios
-## Ticket creation
+## [Ticket creation] (TicketCreation.png)
 
 ### Stakeholders
 * Customer - Interested in entering a ticket the fastest and easiest way, get it assigned to experts, and executed in a timely fashion
@@ -26,7 +26,7 @@
 
 
 
-## Ticket-to-expert matching
+## [Ticket-to-expert matching](TicketToExpertMatching.png)
 
 ### Stakeholders
 * Customer - Interested in having the ticket assigned to experts and executed in a timely fashion
@@ -47,7 +47,7 @@
 
 
 
-## Ticket execution (visits)
+## [Ticket execution (visits)](TicketExecution.png)
 
 ### Stakeholders
 * Customer - Interested in ticket executed in a timely fashion
