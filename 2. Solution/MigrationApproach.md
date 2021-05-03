@@ -36,7 +36,7 @@ The deployment of the new  is to do the following during the off-business hours:
 |12. | Reporting             | Reporting Service     | Rename of the service                         |
 |13. | Ticket Shared         | Ticket Service        | Merged into new service                       |
 |14. | Ticket Assign         | Ticket Service        | Changed ticketing business process -> ADR.003 |
-|15. | Ticket Route          | Filter Service        | Redesign functionality                        |
+|15. | Ticket Route          | Expert Shortlisting Service        | Redesign functionality                        |
 |16. | Survey                | Survey Service        | Merged into new service                       |
 |17. | Survey Template       | Survey Service        | Merged into new service                       |
 |18. | User Maintenance      | User Service          | Rename of the service                         |
