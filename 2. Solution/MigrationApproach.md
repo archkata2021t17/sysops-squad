@@ -2,26 +2,22 @@
 1. Automated regression test suite.
 
 ### Migration Approach
-1. The first service to be migrated is the "Ticket Service". Followed by one micro-service at a time.
-This is only service, which has functional changes as per solution design.
-1. The migration will be based on 'phased delivery' for each micro-service.
-1. The Strangler Pattern will be used. The monolith will be decommissioned after six months of successful run of the last micro-services.
-1. Another benefit of Strangler Pattern is that the expected downtime is minimal, still the initial few
-deployments will be done during non/low business hours.
-1. Below steps will be followed for each microservice deployment in production environment.   
-   1. The monolith application will be stopped
-   1. Any running microservice will be stopped.
-   1. Database of the new deploying microservice will be migrated from old to new DB.
-   1. Microservice will be started followed by the monolith application.
-   1. Post deployment smoke test.
+The current application is a monolith and in a hard to maintain state, where changes take a long time and are error prone. To mitigate the problems with current application, the proposed new application architecture consists of microservices that primarily communicate with each other asynchronously using a message bus. Migrating a monolith, where the components would typically communicate synchronously, to the proposed new asynchronous communication based microservice architecture in a phased manner seems very complex and error prone since the old components will continue synchronous communication and access data from the old single database while new application components will use asynchronous communication and access data from microservice-specific database.
 
+#### Development
+During the development phase,
+- Development needs to be done for the components shown below in the Component Mapping table.
+- For every component, an automation test suite that tests all its functionality needs to be built.
+- Existing components which will get reused, need to be modified to work as microservices that use asynchronous communication and a separate database with data as shown in the Database Mapping section. For existing components, test suite needs to compare the test results for the old implementation with the new one and fixes need to go in, where appropriate.
+- Test suite should also cover the integration work flows between the microservices.
+- The entire application needs to be run in trial mode for select beta customers.
 
-<s>* Downtime is OK, so we can:
-  * take the current system down,
-  * do the data migration (shouldn't be big -- clarify??? how many tickets there already?)
-  * Run QA UI to ensure the new system works (need all the key test cases ready)
-  * Bring the new system live
-</s>
+#### Deployment
+The deployment of the new  is to do the following during the off-business hours:
+1. Stop the old application services.
+1. Migrate the data from the database of the old application to the new microservice-specific databases. The table mapping details are given in the "Database Mapping" section below.
+1. After the migration is complete, start the new microservices.
+
 ----
 Existing to new Components Mapping
 
@@ -48,7 +44,7 @@ Existing to new Components Mapping
 
 ![Mapping of components](./img/ServiceMapping.png)
 
-## Database mapping
+## Database Mapping
 | # | Existing DB Table | New DB |
 |----|----|----|
 |1.  | ss.Customer                   | Customer DB, Billing DB, Ticket DB, Survey DB |
