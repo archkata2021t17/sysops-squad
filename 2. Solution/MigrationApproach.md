@@ -18,8 +18,7 @@ The deployment of the new  is to do the following during the off-business hours:
 1. Migrate the data from the database of the old application to the new microservice-specific databases. The table mapping details are given in the "Database Mapping" section below.
 1. After the migration is complete, start the new microservices.
 
-----
-Existing to new Components Mapping
+#### Existing to new Components Mapping
 
 | # | Existing Systems's Component | New System's Component | Action |
 |----|----|----|----|
@@ -44,7 +43,7 @@ Existing to new Components Mapping
 
 ![Mapping of components](./img/ServiceMapping.png)
 
-## Database Mapping
+#### Database Mapping
 | # | Existing DB Table | New DB |
 |----|----|----|
 |1.  | ss.Customer                   | Customer DB, Billing DB, Ticket DB, Survey DB |
