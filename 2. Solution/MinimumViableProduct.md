@@ -1,6 +1,6 @@
 # Minimum Viable Product
 
-If the client's situation doesn't permit to full-blown upgrade (from the cost or development time perspective), it can go with a Minimum Viable Product (MVP).
+If the client's situation doesn't permit to full-blown upgrade (from the cost or development time perspective), we can go with a Minimum Viable Product (MVP).
 
 Here is how it will be if the client is willing to take this approach.
 
