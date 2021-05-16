@@ -4,9 +4,6 @@ The current application is a monolith and in a hard to maintain state, where cha
 #### Pre-requisites
 - Automated regression test suite.
 
-#### Migration Sequence
-As described in [here](MinimumViableProduct.md), migration will first target the ticket creation/updating flow so that the problem of lost tickets is resolved. Next, the ticket assignment flow will be targeted to ensure that the right experts pick up the tickets. At this point we would have the microservices - Ticket Service and Expert Shortlisting Service which target the most pressing problems of the existing application. The subequent micro services will be moved gradually in a series of MVPs.
-
 #### Development
 During the development phase,
 - Development needs to be done for the components shown below in the Component Mapping table.
@@ -14,6 +11,9 @@ During the development phase,
 - Existing components which will get reused, need to be modified to work as microservices that use asynchronous communication and a separate database with data as shown in the Database Mapping section. For existing components, test suite needs to compare the test results for the old implementation with the new one and fixes need to go in, where appropriate.
 - Test suite should also cover the integration work flows between the microservices.
 - The entire application needs to be run in trial mode for select beta customers.
+
+#### Migration Sequence
+As described [here](MinimumViableProduct.md), migration will first target the ticket creation/updating flow so that the problem of lost tickets is resolved. Next, the ticket assignment flow will be targeted to ensure that the right experts pick up the tickets. At this point we would have the microservices - Ticket Service and Expert Shortlisting Service which target the most pressing problems of the existing application. The subequent micro services will be moved gradually in a series of MVPs.
 
 #### Deployment
 The deployment of the new solution involves the following to be done during the off-business hours:
