@@ -2,7 +2,10 @@
 1. Automated regression test suite.
 
 ### Migration Approach
-The current application is a monolith and in a hard to maintain state, where changes take a long time and are error prone. To mitigate the problems with current application, the proposed new application architecture consists of microservices that primarily communicate with each other asynchronously using a message bus. Migrating a monolith, where the components would typically communicate synchronously, to the proposed new asynchronous communication based microservice architecture in a phased manner seems very complex and error prone since the old components will continue synchronous communication and access data from the old single database while new application components will use asynchronous communication and access data from microservice-specific database.
+The current application is a monolith and in a hard to maintain state, where changes take a long time and are error prone. To mitigate the problems with current application, the proposed new application architecture consists of microservices that primarily communicate with each other asynchronously using a message bus. 
+
+#### Migration Sequence
+As described in [here](MinimumViableProduct.md), migration will first target the ticket creation/updating flow so that the problem of lost tickets is resolved. Next, the ticket assignment flow will be targeted to ensure that the right experts pick up the tickets. At this point we would have the microservices - Ticket Service and Expert Shortlisting Service which target the most pressing problems of the existing application. The subequent micro services will be moved gradually in a series of MVPs.
 
 #### Development
 During the development phase,
