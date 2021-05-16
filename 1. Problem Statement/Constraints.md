@@ -7,4 +7,4 @@ Below listed global constraints for the solution that drives all trade-off decis
 3. Development team is limited, so the solution should be simple at the beginning to prove business ideas
 4. Time-to-market is critical, and with support of the previous constraint, it should be super simple to deploy
 5. AWS is the primary target platform for deployment
-6. Budget is limited, so OSS and tools provided by the target platform should end up higher in prioritization}
+6. Budget is limited, so OSS and tools provided by the target platform should end up higher in prioritization
