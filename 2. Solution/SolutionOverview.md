@@ -9,7 +9,7 @@
 
 ## Summary
 After analysing the problem statement and current application architecture of Penultimate Electronics, its identified that
-the current system is a monolith, and some key functionalities doesn't work reliably.     
+the current system is a monolith, and some key functionalities do not work reliably.     
 
 ##### As-Is Architecture
 ![AsIsAppArchitecture](./img/AsIsSysOpSquadAppArch.png)
@@ -22,7 +22,7 @@ The Purposed Architecture is to break the current monolith into microservices ar
 1. Reuse the services where possible. The existing component to microservice mapping can be found [here](img/ServiceMapping.png)
 1. Ticket assignment service is re-designed as Expert Selection microservice based on UBER model, details can be found [here](../3.%20Perspectives)
 1. Message Broker queues and guaranteed delivery will be used for inter-service communication.
-1. Big Bang migration approach.
+1. Migration would be done via a series of MVPs which will gradually migrate the entire application to the new microservice-based architecture.
 1. Create robust regression test suite to have confidence in moved, changed and newly created services. 
 1. On demand scaling of microservices to achieve high availability. 
 1. Disaster recovery of the system will be handled by Active-Passive deployment. Details are [here](DisasterRecovery.md).
