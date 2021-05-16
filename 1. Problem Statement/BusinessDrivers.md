@@ -20,7 +20,7 @@ Loosing business, regular complaints from customers, not sustainable due to loss
 | BD.006 | The system must be responsive during the peak business hours
 
 
-# Significant Architectural Requirements (SAR)
+## Significant Architectural Requirements (SAR)
 
 List of architecture driving requirements (primary functional, quality attribute, and life-cycle requirements)
 
