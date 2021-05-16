@@ -12,14 +12,14 @@ During the development phase,
 - Test suite should also cover the integration work flows between the microservices.
 - The entire application needs to be run in trial mode for select beta customers.
 
-#### Migration Sequence
-As described [here](MinimumViableProduct.md), migration will first target the ticket creation/updating flow so that the problem of lost tickets is resolved. Next, the ticket assignment flow will be targeted to ensure that the right experts pick up the tickets. At this point we would have the microservices - Ticket Service and Expert Shortlisting Service which target the most pressing problems of the existing application. The subequent micro services will be moved gradually in a series of MVPs.
-
 #### Deployment
 The deployment of the new solution involves the following to be done during the off-business hours:
 1. Stop the old application services.
 1. Migrate the data from the database of the old application to the new microservice-specific databases. The table mapping details are given in the "Database Mapping" section below.
 1. After the migration is complete, start the new microservices.
+
+#### Migration Sequence
+As described [here](MinimumViableProduct.md), migration will first target the ticket creation/updating flow so that the problem of lost tickets is resolved. Next, the ticket assignment flow will be targeted to ensure that the right experts pick up the tickets. At this point we would have the microservices - Ticket Service and Expert Shortlisting Service which target the most pressing problems of the existing application. The subequent micro services will be moved gradually in a series of MVPs.
 
 #### Existing to new Components Mapping
 
