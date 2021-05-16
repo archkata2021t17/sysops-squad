@@ -15,4 +15,6 @@ Here is how it will be if the client is willing to take this approach.
     * Solution: there will be written a script that will extract the necessary data from the microservices databases, and put in the Monolith DB, after that the Reporting module can be fired.
 5. The Payment Component stays
     * Only information needed for the Ticketing flow is if a Customer is covered for this specific date.
-    * Solution: have a simple way (like a DB trigger) to feed the "customer paid until this date" to the new architecture
+    * Solution:
+         *  The Customer UI for payment still feeds the data into the monolyth
+         *  there will be developed a simple way (like a DB trigger) to feed the "customer paid until this date" to the new architecture
