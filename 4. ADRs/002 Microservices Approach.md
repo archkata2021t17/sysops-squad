@@ -20,18 +20,18 @@ Key map:
 - - Negative
 - -- Strongly negative
 
-| | Monolith | Microservices | Micro-kernel | Modularized Monolith |
+| | Monolith | Microservices | Modularized Monolith |
 |----|----|----|-----|-----|
-| Ease of Deployment  | ++ | -  | -  | ++ |
-| Availability        | -  | ++ | +  | -  |
-| Autonomy            | -- | ++ | ++ | +  |
-| Traceability        | ++ | -  | +  | O  |
-| Performance         | ++ | ++ | +  | ++ |
-| Modifiability       | O  | ++ | +  | +  |
-| Maintainability     | -  | ++ | +  | +  |
-| Integrity           | ++ | -- | O  | +  |
-| Security            | -  | ++ | +  | ++ |
-| Scalability         | -- | ++ | -  | +  |
+| Ease of Deployment  | ++ | -  | ++ |
+| Availability        | -  | ++ | -  |
+| Autonomy            | -- | ++ | +  |
+| Traceability        | ++ | -  | O  |
+| Performance         | ++ | ++ | ++ |
+| Modifiability       | O  | ++ | +  |
+| Maintainability     | -  | ++ | +  |
+| Integrity           | ++ | -- | +  |
+| Security            | -  | ++ | ++ |
+| Scalability         | -- | ++ | +  |
 
 ## Decision
 
