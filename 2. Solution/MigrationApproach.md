@@ -13,7 +13,7 @@ During the development phase,
 - The entire application needs to be run in trial mode for select beta customers.
 
 #### Deployment
-The deployment of the new  is to do the following during the off-business hours:
+The deployment of the new solution involves the following to be done during the off-business hours:
 1. Stop the old application services.
 1. Migrate the data from the database of the old application to the new microservice-specific databases. The table mapping details are given in the "Database Mapping" section below.
 1. After the migration is complete, start the new microservices.
